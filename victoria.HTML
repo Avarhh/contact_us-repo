@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>School Registration Form</title>
+    <style>
+      #register-now {
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      #sign-up {
+        text-align: center;
+        font-size: 24px;
+        font-style: italic;
+        margin-bottom: 50px;
+      }
+      #classroom {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="register-now">
+      Register now
+    </div>
+    <div id="sign-up">
+      Sign up to be a student
+    </div>
+    
+    <form action="#" method="post">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required>
+      <br><br>
+      <label for="date-of-birth">Date of Birth:</label>
+      <input type="date" id="date-of-birth" name="date-of-birth" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="6" required>
+      <br><br>
+      <label for="entry-level">Entry Level:</label>
+      <select id="entry-level" name="entry-level" required>
+        <option value="">-- Select Entry Level --</option>
+        <option value="100">Level 100</option>
+        <option value="200">Level 200</option>
+        <option value="300">Level 300</option>
+        <option value="400">Level 400</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>
